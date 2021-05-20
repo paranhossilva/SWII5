@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Novo</servlet-name>
+        <servlet-class>Package.Novo</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Deletar</servlet-name>
+        <servlet-class>Package.Deletar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Alterar</servlet-name>
+        <servlet-class>Package.Alterar</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Novo</servlet-name>
+        <url-pattern>/Novo</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Deletar</servlet-name>
+        <url-pattern>/Deletar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Alterar</servlet-name>
+        <url-pattern>/Alterar</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
